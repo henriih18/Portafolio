@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 393px;  
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  background-color: #0e0f58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+  color: #3e51ff;
+  text-shadow: 0 0 4px #fff;
+  text-align: center;
+}
+
+.menu-bar {
+  margin: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-bar > .bx-menu {
+  font-weight: 400;
+  font-size: 2rem;  
+}
+
+.menu-bar > .bx-menu:hover {
+  font-weight: 600;
+  font-size: 2.5rem; 
+  border-radius: 5px; 
+}
+
+main {
+  width: 100%;
+  height: 60rem;
+  background-color: #3e51ff;
+  padding: 1rem;
+}
+
+.projects {
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.container-projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-projects > .card {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+  background-color: #1f1ff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.experiences {
+  width: 92%;
+  height: auto;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+.experiences > .xp {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3208a4;
+  color: #6b38f7;
+  margin: 0.2rem;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  background-color: #17033c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-social-networks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  list-style: none;
+}
+
+.navbar-social-networks > li > a {
+  color: #fff;
+}
+
+.navbar-social-networks > li > a:hover {
+  color: #9436ff;
+  text-shadow: 0 0 2px #fff;
+}
+
+@media screen and (min-width: 480px) and (max-width: 932px) {
+  header {    
+    width: 100vw;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .container-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-projects > .card {
+    width: 20rem;
+  }
+ 
+}
