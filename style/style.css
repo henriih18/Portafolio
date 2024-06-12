@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -9,25 +10,45 @@ body {
   height: auto;
 }
 
-header {
-  width: 100%;
-  height: 10rem;
-  background-color: #0e0f58;
+.header {
   display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  background-color: #0e0f58;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin: 1rem;
-  color: #3e51ff;
-  text-shadow: 0 0 4px #fff;
+.header h1 {
+  color: #d7dbfd;
+  text-shadow: 0 0 4px #080808;
   text-align: center;
 }
 
-h2 {
-  font-size: 2rem;
+.photo-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.photo-text img {
+  width: 20vw;
+  border-radius: .7rem;
+  -webkit-border-radius: .7rem;
+  -moz-border-radius: .7rem;
+  -ms-border-radius: .7rem;
+  -o-border-radius: .7rem;
+}
+
+.photo-text p {
+  text-align: center;
+  padding: 0.8rem;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
 }
 
 .menu-bar {
@@ -49,10 +70,11 @@ h2 {
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: #3e51ff;
   padding: 1rem;
+  background-color: #969696;
 }
 
 .projects {
@@ -61,6 +83,7 @@ main {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .container-projects {
@@ -69,7 +92,14 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
+
+.projects h2 {
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -77,8 +107,18 @@ main {
   gap: 1rem;
 }
 
+.project p {
+  font-size: 1.2rem;
+}
+
+.project h3 {
+  font-size: 1.4rem;
+}
+
+
+
 .container-projects > .card {
-  width: 50%;
+  width: 60vw;
   height: auto;
   margin: 0.5rem;
   padding: 1rem;
@@ -94,8 +134,8 @@ main {
   -o-border-radius: 1rem;
 }
 
-.card img{
-  width: 12rem;
+.card img {
+  width: 30vw;
 }
 
 .card {
@@ -109,20 +149,25 @@ main {
   height: auto;
   margin: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .experiences > .xp {
-  width: 7.5rem;
-  height: 6rem;
-  border-radius: 50%;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #3208a4;
   color: #6b38f7;
   margin: 0.2rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 footer {
@@ -159,25 +204,7 @@ footer {
   text-shadow: 0 0 2px #fff;
 }
 
-@media screen and (min-width: 428px) and (max-width: 767px) {
-  header {
-    width: 100vw;
-  }
 
-  main {
-    width: 100vw;
-  }
-
-  .container-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container-projects > .card {
-    width: 20rem;
-  }
-}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   body {
@@ -190,12 +217,10 @@ footer {
     justify-content: space-around;
   }
 
-
-  .container-projects{
+  .container-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    
   }
 
   .container-projects > .card {
@@ -206,5 +231,5 @@ footer {
     -moz-border-radius: 8rem;
     -ms-border-radius: 8rem;
     -o-border-radius: 8rem;
-}
+  }
 }
