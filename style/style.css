@@ -234,11 +234,9 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-  
-.header h1 {
-  font-size: 4.5rem;
-}
-  
+  .header h1 {
+    font-size: 4.5rem;
+  }
 
   .photo-text p {
     font-size: 2.8rem;
@@ -247,7 +245,6 @@ footer {
 
   .photo-text img {
     width: 28%;
-    
   }
 
   .projects h2 {
@@ -266,19 +263,15 @@ footer {
   }
 
   .navbar-social-networks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2.5rem;
-    color: #fff;
     gap: 5rem;
   }
 
   .project p {
-  font-size: 1.8rem;
-}
+    font-size: 1.8rem;
+  }
 
-.project h3 {
-  font-size: 2rem;
-}
+  .project h3 {
+    font-size: 2rem;
+  }
 }
