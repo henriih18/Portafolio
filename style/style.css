@@ -6,14 +6,15 @@
 }
 
 body {
-  width: 393px;
+  width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #0e0f58;
   justify-content: center;
@@ -36,19 +37,20 @@ body {
 }
 
 .photo-text img {
-  width: 20vw;
-  border-radius: .7rem;
-  -webkit-border-radius: .7rem;
-  -moz-border-radius: .7rem;
-  -ms-border-radius: .7rem;
-  -o-border-radius: .7rem;
+  width: 35%;
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
 }
 
 .photo-text p {
   text-align: center;
   padding: 0.8rem;
   color: rgb(255, 255, 255);
-  font-size: 3vw;
+  font-size: 1rem;
+  line-height: 1.1rem;
 }
 
 .menu-bar {
@@ -70,7 +72,7 @@ body {
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #3e51ff;
   padding: 1rem;
@@ -92,7 +94,6 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 .projects h2 {
@@ -115,15 +116,14 @@ main {
   font-size: 1.4rem;
 }
 
-
-
 .container-projects > .card {
-  width: 60vw;
+  width: 85%;
   height: auto;
   margin: 0.5rem;
   padding: 1rem;
   background-color: #1f1ff1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -132,46 +132,15 @@ main {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  gap: 1rem;
 }
 
 .card img {
-  width: 30vw;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.experiences {
-  width: 92%;
-  height: auto;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.experiences > .xp {
-  width: 10rem;
-  height: 8rem;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3208a4;
-  color: #6b38f7;
-  margin: 0.2rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  width: 48%;
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 5rem;
   background-color: #17033c;
   display: flex;
@@ -204,17 +173,38 @@ footer {
   text-shadow: 0 0 2px #fff;
 }
 
+@media screen and (min-width: 319px) and (max-width: 767px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
 
+  main {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   body {
-    width: 100vw;
+    width: 100%;
     font-size: 25px;
   }
 
   .header {
     display: flex;
     justify-content: space-around;
+  }
+
+  .photo-text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
   }
 
   .container-projects {
@@ -224,12 +214,71 @@ footer {
   }
 
   .container-projects > .card {
-    height: 11rem;
+    height: 20rem;
     margin: 1.5rem;
-    border-radius: 8rem;
-    -webkit-border-radius: 8rem;
-    -moz-border-radius: 8rem;
-    -ms-border-radius: 8rem;
-    -o-border-radius: 8rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
   }
+
+  .navbar-social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  
+.header h1 {
+  font-size: 4.5rem;
+}
+  
+
+  .photo-text p {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+
+  .photo-text img {
+    width: 28%;
+    
+  }
+
+  .projects h2 {
+    font-size: 2.8rem;
+  }
+
+  .container-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .container-projects > .card {
+    height: auto;
+    margin: 1.5rem;
+  }
+
+  .navbar-social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+    gap: 5rem;
+  }
+
+  .project p {
+  font-size: 1.8rem;
+}
+
+.project h3 {
+  font-size: 2rem;
+}
 }
