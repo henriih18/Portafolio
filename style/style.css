@@ -224,11 +224,7 @@ footer {
   }
 
   .navbar-social-networks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2.5rem;
-    color: #fff;
     gap: 2rem;
   }
 }
@@ -244,7 +240,7 @@ footer {
   }
 
   .photo-text img {
-    width: 28%;
+    width: 20%;
   }
 
   .projects h2 {
